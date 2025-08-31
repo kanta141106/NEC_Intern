@@ -1,0 +1,61 @@
+RAG_program/
+# =========================================
+# Python & Virtual Environment
+# =========================================
+# 仮想環境フォルダ (エラーメッセージから myenv をお使いと判断しました)
+myenv/
+venv/
+.venv/
+env/
+.env/
+
+# Pythonのキャッシュファイル
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# パッケージング関連
+build/
+dist/
+*.egg-info/
+
+
+# =========================================
+# AI / ML Models & Data
+# =========================================
+# 大容量のダウンロードしたモデル (Gitでの管理には不向きです)
+RAG_program/multilingual-e5-large/
+
+# データファイルやログファイル (必要に応じて追加)
+*.csv
+*.log
+
+
+# =========================================
+# OS / Editor Specific
+# =========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# IDE設定ファイル (VSCode, PyCharmなど)
+.vscode/
+.idea/
+
+
+# =========================================
+# Secrets & Credentials
+# =========================================
+# APIキーなどを記述する.envファイル (非常に重要)
+.env
+*.env
+
+# 設定ファイル (もし個人情報を記述する場合)
+# config.ini
