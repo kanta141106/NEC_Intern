@@ -31,30 +31,7 @@ git clone https://github.com/kanta141106/NEC_Intern
 
 ---
 
-### ステップ2: Python環境の構築
-
-コマンドプロンプトまたはPowerShellを開き、`NEC_Intern` フォルダに移動してから、以下のコマンドを順に実行します。
-
-```bash
-# 1. NEC_Intern フォルダに移動
-cd path\to\NEC_Intern
-
-# 2. Python仮想環境を作成 (フォルダ内に myenv が作成されます)
-python -m venv myenv
-
-# 3. 仮想環境を有効化
-.\myenv\Scripts\activate
-```
-コマンドプロンプトの行頭に `(myenv)` と表示されれば、仮想環境が正常に有効化されています。
-
-```bash
-# 4. 必要なライブラリをインストール
-pip install -r requirements.txt
-```
-
----
-
-### ステップ3: Elasticsearchの起動
+### ステップ2: Elasticsearchの起動
 
 Elasticsearchサーバーを起動します。このサーバーはアプリケーションが動作している間、常に起動している必要があります。
 
@@ -74,11 +51,11 @@ Elasticsearchサーバーを起動します。このサーバーはアプリケ�
 
 ---
 
-### ステップ4: Elasticsearchへのデータ登録 (初回のみ)
+### ステップ3: Elasticsearchへのデータ登録 (初回のみ)
 
 Elasticsearchサーバーが起動したら、次にRAGデータを登録します。
 
-1.  **ステップ2で使っていた元のコマンドプロンプト**（`(myenv)` が表示されている方）に戻ります。
+1.  **ステップ2で使っていた元のコマンドプロンプト**に戻ります。
 
 2.  `NEC_Intern` のルートディレクトリにいることを確認し、以下のコマンドを実行します。
     ```bash
@@ -88,11 +65,11 @@ Elasticsearchサーバーが起動したら、次にRAGデータを登録しま�
 
 ---
 
-### ステップ6: アプリケーションの実行
+### ステップ4: アプリケーションの実行
 
 全ての準備が整いました。以下のコマンドでStreamlitアプリケーションを起動します。
 
-1.  **ステップ5と同じコマンドプロンプト**（`(myenv)` が表示されている方）で、以下のコマンドを実行します。
+1.  **ステップ3と同じコマンドプロンプト**で、以下のコマンドを実行します。
     ```bash
     streamlit run app.py
     ```
