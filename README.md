@@ -11,7 +11,7 @@
 まず、このプロジェクト（`NEC_Intern`）を任意の作業フォルダにクローンします。
 
 ```bash
-git clone <NEC_InternリポジトリのURL>
+git clone https://github.com/kanta141106/NEC_Intern
 ```
 
 #### 1-2. `RAG_program` フォルダの配置
